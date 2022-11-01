@@ -124,5 +124,32 @@ namespace PDollarGestureRecognizer
                 sw.WriteLine("</Gesture>");
             }
         }
+
+        /// <summary>
+        /// Generate and return XML
+        /// </summary>
+        public static string GetXML(PDollarGestureRecognizer.Point[] points, string gestureName)
+        {
+            string xmlToReturn = "";
+            xmlToReturn += $"<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>";
+            xmlToReturn += $"\n<Gesture Name = \"{gestureName}\">";
+            int currentStroke = -1;
+            for (int i = 0; i < points.Length; i++)
+            {
+                if (points[i].StrokeID != currentStroke)
+                {
+                    if (i > 0)
+                        xmlToReturn += "\n\t</Stroke>";
+                    xmlToReturn += "\n\t<Stroke>";
+                    currentStroke = points[i].StrokeID;
+                }
+
+                xmlToReturn += $"\n\t\t<Point X = \"{points[i].X}\" Y = \"{points[i].Y}\" T = \"0\" Pressure = \"0\" />";
+            }
+            xmlToReturn += "\n\t</Stroke>";
+            xmlToReturn += "\n</Gesture>";
+
+            return xmlToReturn;
+        }
     }
 }

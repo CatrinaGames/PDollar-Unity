@@ -1,3 +1,16 @@
+This fork use [LeanTouch](https://assetstore.unity.com/packages/tools/input-management/lean-touch-30111) extension for Inputs
+
+![Example 2D](https://i.imgur.com/xv2mRN8.png)
+
+You can create the regonizer easy:
+![PDollar Recognizer](https://i.imgur.com/Akpeejw.png)
+![Recognizer Inspector](https://i.imgur.com/M5MCsap.png)
+
+You can create your own patterns and save it in a manager:
+![Pattern Manager](https://i.imgur.com/NkPMjum.png)
+![Patter Manager Values](https://i.imgur.com/hHTh1dR.png)
+
+
 $P Point-Cloud Recognizer
 =========================
 [Original article](http://depts.washington.edu/aimgroup/proj/dollar/pdollar.html). [Unity Web demo](http://aymericlamboley.fr/blog/wp-content/uploads/2014/07/index.html).
