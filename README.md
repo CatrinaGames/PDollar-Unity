@@ -1,10 +1,13 @@
 This fork use [LeanTouch](https://assetstore.unity.com/packages/tools/input-management/lean-touch-30111) extension for Inputs
 
+
 ![Example 2D](https://i.imgur.com/xv2mRN8.png)
+
 
 You can create the regonizer easy:
 ![PDollar Recognizer](https://i.imgur.com/Akpeejw.png)
 ![Recognizer Inspector](https://i.imgur.com/M5MCsap.png)
+
 
 You can create your own patterns and save it in a manager:
 ![Pattern Manager](https://i.imgur.com/NkPMjum.png)
